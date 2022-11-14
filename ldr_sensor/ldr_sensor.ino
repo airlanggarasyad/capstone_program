@@ -11,6 +11,7 @@ const char* mqtt_server = "192.168.1.4";
 WiFiClient espClient;
 PubSubClient client(espClient);
 
+int ledPin = 0;
 double lightIntensity = 0;
 double averageLightIntensity = 0;
 
@@ -35,7 +36,7 @@ void setup_wifi() {
   Serial.print("Connecting to ");
   Serial.println(ssid);
 
-  WiFi.begin(ssid, password);
+  WiFi.begin(ssid, pass);
 
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
@@ -87,13 +88,20 @@ double readLDRData() {
 
   return (0.1784 * ldrRawData) + 93.93325;
 }
+
 void loop() {
-  for (int i = 0; i < 5; i++) {
+  if (!client.connected()) {
+    reconnect();
+  }
+
+  client.loop();
+  
+  for (int i=0; i<5; i++) {
     lightIntensity = lightIntensity + readLDRData();
   }
 
   averageLightIntensity = lightIntensity / 5;
   messageData = String(averageLightIntensity, 4);
-
+  
   client.publish("capstoneA16/lightIntensity", messageData);
 }
