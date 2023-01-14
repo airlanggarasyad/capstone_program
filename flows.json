@@ -1,0 +1,1015 @@
+[
+    {
+        "id": "1f2dfa458860a912",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "47a563359d0c9b23",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c74156213d65b02b",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6e80f07ecc379044",
+        "type": "mqtt-broker",
+        "name": "Local Broker",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "459ecf2ed4fb8463",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "72fa9d2ef9641eb9",
+        "type": "ui_group",
+        "name": "General Information",
+        "tab": "459ecf2ed4fb8463",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b35cac4e90c037d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "92657acdd9b163b9",
+        "type": "ui_group",
+        "name": "Lamp Configuration",
+        "tab": "459ecf2ed4fb8463",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9240af56760f7b00",
+        "type": "ui_group",
+        "name": "Switch",
+        "tab": "8769c6f305dc8284",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8769c6f305dc8284",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7546aba919042b51",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6e5e0841b3e47426",
+        "type": "mqtt in",
+        "z": "1f2dfa458860a912",
+        "name": "Light Intensity",
+        "topic": "/capstoneA16/lightIntensity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6e80f07ecc379044",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "34d9deda0a817f55",
+                "d822801a4bb2bde8",
+                "c211f4dbb4c51118"
+            ]
+        ]
+    },
+    {
+        "id": "34d9deda0a817f55",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "parseLDR",
+        "func": "let lightIntensity = Number(msg.payload);\nflow.set(\"global_light_intensity\", lightIntensity);\n\nif (lightIntensity < 0) {\n    lightIntensity = (Math.random() * 50) + 50\n}\n\nreturn { payload: lightIntensity.toFixed(2)};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "6dc245d2ad8d77c1",
+                "ebbbf6e17f630508"
+            ]
+        ]
+    },
+    {
+        "id": "193ac3a59a44feb4",
+        "type": "mqtt in",
+        "z": "1f2dfa458860a912",
+        "name": "Visitor Count",
+        "topic": "/capstoneA16/visitor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6e80f07ecc379044",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "afd6e523ecb1d7cb",
+                "d822801a4bb2bde8"
+            ]
+        ]
+    },
+    {
+        "id": "afd6e523ecb1d7cb",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "parseVisitor",
+        "func": "let visitor = Number(msg.payload);\nflow.set(\"global_visitor_count\", visitor);\n\nreturn {payload:visitor};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "405baf32b4ab3e04",
+                "98a1bfd9b54d1962"
+            ]
+        ]
+    },
+    {
+        "id": "6dc245d2ad8d77c1",
+        "type": "ui_chart",
+        "z": "1f2dfa458860a912",
+        "name": "LI Chart",
+        "group": "72fa9d2ef9641eb9",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "100",
+        "ymax": "600",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 560,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d822801a4bb2bde8",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "checkMasterLampLogic",
+        "func": "let lightIntensity = flow.get(\"global_light_intensity\");\nlet visitorCount = flow.get(\"global_visitor_count\");\nlet mode = flow.get(\"global_automatic_switch\")\n\nlet lampStatus;\n\nif (mode) {\n    if ((lightIntensity < 300) && (visitorCount > 0)) {\n        lampStatus = \"ON\";\n    } else {\n        lampStatus = \"OFF\"\n    }\n} else {\n    if (flow.get(\"global_light_switch\")) {\n        lampStatus = \"ON\";\n    } else {\n        lampStatus = \"OFF\";\n    }\n}\n\nreturn {payload: lampStatus, mode: mode};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 520,
+        "wires": [
+            [
+                "3fc865df58a63e02",
+                "a560bb27dbc5c4d8"
+            ]
+        ]
+    },
+    {
+        "id": "ebbbf6e17f630508",
+        "type": "ui_gauge",
+        "z": "1f2dfa458860a912",
+        "name": "Light Gauge",
+        "group": "72fa9d2ef9641eb9",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Lux",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c1e62601a3638b0d",
+        "type": "ui_text",
+        "z": "1f2dfa458860a912",
+        "group": "72fa9d2ef9641eb9",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Light Intensity",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 100,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9e6308a65fc61a1a",
+        "type": "ui_text",
+        "z": "1f2dfa458860a912",
+        "group": "72fa9d2ef9641eb9",
+        "order": 5,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Visitor Count",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 90,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "405baf32b4ab3e04",
+        "type": "ui_gauge",
+        "z": "1f2dfa458860a912",
+        "name": "Visitor Gauge",
+        "group": "72fa9d2ef9641eb9",
+        "order": 7,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Visitor(s)",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 580,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "98a1bfd9b54d1962",
+        "type": "ui_chart",
+        "z": "1f2dfa458860a912",
+        "name": "Visitor Chart",
+        "group": "72fa9d2ef9641eb9",
+        "order": 6,
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fc865df58a63e02",
+        "type": "ui_text",
+        "z": "1f2dfa458860a912",
+        "group": "72fa9d2ef9641eb9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Master Lamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 650,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "408a3a09f7bb6e2d",
+        "type": "inject",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "d822801a4bb2bde8"
+            ]
+        ]
+    },
+    {
+        "id": "a560bb27dbc5c4d8",
+        "type": "mqtt out",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "topic": "/capstoneA16/lampStatus",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6e80f07ecc379044",
+        "x": 690,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0d08a62102d21f37",
+        "type": "ui_switch",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "label": "Automatic",
+        "tooltip": "",
+        "group": "92657acdd9b163b9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "6b0d416236d8f587"
+            ]
+        ]
+    },
+    {
+        "id": "6b0d416236d8f587",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "setAutomatic",
+        "func": "let switchState = msg.payload;\nflow.set(\"global_automatic_switch\", switchState);\n\nreturn { payload: switchState };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e07db916c962654b",
+        "type": "inject",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 740,
+        "wires": [
+            [
+                "0d08a62102d21f37"
+            ]
+        ]
+    },
+    {
+        "id": "e30ee48f6ec18365",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "setMasterLamp",
+        "func": "let switchState = msg.payload;\nlet modeString;\n\nflow.set(\"global_light_switch\", switchState);\n\nif (switchState) {\n    modeString = \"ON\"\n} else {\n    modeString = \"OFF\"\n}\n\nreturn { payload: modeString };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 660,
+        "wires": [
+            [
+                "a560bb27dbc5c4d8"
+            ]
+        ]
+    },
+    {
+        "id": "2aaa3180b45db89f",
+        "type": "ui_switch",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "label": "Master Lamp Switch",
+        "tooltip": "",
+        "group": "72fa9d2ef9641eb9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "e30ee48f6ec18365"
+            ]
+        ]
+    },
+    {
+        "id": "3abb6f0a4964b7f5",
+        "type": "ui_text",
+        "z": "1f2dfa458860a912",
+        "group": "92657acdd9b163b9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Desk Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 690,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "879c5c9d161ac0b7",
+        "type": "mqtt in",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "topic": "/capstoneA16/deskStatus",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6e80f07ecc379044",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 840,
+        "wires": [
+            [
+                "6d6e950277810a58"
+            ]
+        ]
+    },
+    {
+        "id": "68c8fe9e327885b4",
+        "type": "mqtt out",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "topic": "/capstoneA16/deskLampStatus",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6e80f07ecc379044",
+        "x": 710,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "407996ea48ac3df3",
+        "type": "ui_text",
+        "z": "1f2dfa458860a912",
+        "group": "92657acdd9b163b9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Desk Lamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 650,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "c211f4dbb4c51118",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "checkDeskLampLogic",
+        "func": "let lightIntensity = flow.get(\"global_light_intensity\");\nlet visitorCount = flow.get(\"global_visitor_count\");\nlet mode = flow.get(\"global_automatic_switch\")\n\nlet deskStatus = flow.get(\"global_desk_lamp_status\");\nlet lampStatus;\n\nif ((lightIntensity < 300) && !flow.get(\"global_desk_status\")) {\n        lampStatus = \"ON\";\n    } else {\n        lampStatus = \"OFF\";\n    }\n\nreturn { payload: lampStatus};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 920,
+        "wires": [
+            [
+                "407996ea48ac3df3",
+                "68c8fe9e327885b4"
+            ]
+        ]
+    },
+    {
+        "id": "d98d32dc668f88da",
+        "type": "inject",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 90,
+        "y": 920,
+        "wires": [
+            [
+                "c211f4dbb4c51118"
+            ]
+        ]
+    },
+    {
+        "id": "6d6e950277810a58",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "checkDeskStatusLogic",
+        "func": "let mode = msg.payload;\nlet deskStatus;\n\nflow.set(\"global_desk_status\", mode);\n\nif (!mode) {\n    deskStatus = \"Occupied\"\n} else {\n    deskStatus = \"Available\"\n}\n\nreturn { payload: deskStatus};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 840,
+        "wires": [
+            [
+                "3abb6f0a4964b7f5"
+            ]
+        ]
+    },
+    {
+        "id": "806be9e8ba0b24c5",
+        "type": "ui_switch",
+        "z": "1f2dfa458860a912",
+        "name": "",
+        "label": "Desk Lamp Switch",
+        "tooltip": "",
+        "group": "92657acdd9b163b9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 110,
+        "y": 1000,
+        "wires": [
+            [
+                "e12c94cbe6d41cb5"
+            ]
+        ]
+    },
+    {
+        "id": "e12c94cbe6d41cb5",
+        "type": "function",
+        "z": "1f2dfa458860a912",
+        "name": "setDeskLamp",
+        "func": "let switchState = msg.payload;\nlet modeString;\n\nflow.set(\"global_light_switch\", switchState);\n\nif (switchState) {\n    modeString = \"ON\"\n} else {\n    modeString = \"OFF\"\n}\n\nreturn { payload: modeString };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1000,
+        "wires": [
+            [
+                "68c8fe9e327885b4"
+            ]
+        ]
+    },
+    {
+        "id": "5bc5602e43cb5307",
+        "type": "aedes broker",
+        "z": "47a563359d0c9b23",
+        "name": "LOCAL BROKER",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0233ff3b9b958a61",
+        "type": "ui_switch",
+        "z": "47a563359d0c9b23",
+        "name": "",
+        "label": "Lamp Switch",
+        "tooltip": "",
+        "group": "72fa9d2ef9641eb9",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "1d1450c0264645de"
+            ]
+        ]
+    },
+    {
+        "id": "d226c4f921d084e3",
+        "type": "mqtt out",
+        "z": "47a563359d0c9b23",
+        "name": "",
+        "topic": "IoT/ledState",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7546aba919042b51",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1d1450c0264645de",
+        "type": "function",
+        "z": "47a563359d0c9b23",
+        "name": "function 1",
+        "func": "if (msg.payload) {\n    msg.payload = \"ON\";\n} else {\n    msg.payload = \"OFF\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "d226c4f921d084e3",
+                "99baff776fc2bdd1",
+                "d5ade725c3017704"
+            ]
+        ]
+    },
+    {
+        "id": "99baff776fc2bdd1",
+        "type": "debug",
+        "z": "47a563359d0c9b23",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d5ade725c3017704",
+        "type": "mqtt out",
+        "z": "47a563359d0c9b23",
+        "name": "",
+        "topic": "IoT/ledState",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6e80f07ecc379044",
+        "x": 450,
+        "y": 120,
+        "wires": []
+    }
+]
